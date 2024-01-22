@@ -191,10 +191,10 @@ extension NDEFRecordConvert on ndef.NDEFRecord {
 /// Main class of NFC Kit
 class FlutterNfcKit {
   /// Default timeout for [transceive] (in milliseconds)
-  static const int TRANSCEIVE_TIMEOUT = 5 * 1000;
+  static const int TRANSCEIVE_TIMEOUT = 10 * 1000;
 
   /// Default timeout for [poll] (in milliseconds)
-  static const int POLL_TIIMEOUT = 20 * 1000;
+  static const int POLL_TIIMEOUT = 40 * 1000;
 
   static const MethodChannel _channel = const MethodChannel('flutter_nfc_kit');
 
